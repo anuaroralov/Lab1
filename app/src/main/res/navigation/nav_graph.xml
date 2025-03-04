@@ -12,13 +12,13 @@
         tools:layout="@layout/fragment_home" >
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            android:id="@+id/action_FirstFragment_to_firstFragment"
             app:destination="@id/FirstFragment" />
         <action
-            android:id="@+id/action_FirstFragment_to_thirdFragment"
+            android:id="@+id/action_FirstFragment_to_secondFragment"
             app:destination="@id/SecondFragment" />
         <action
-            android:id="@+id/action_FirstFragment_to_fifthFragment"
+            android:id="@+id/action_FirstFragment_to_thirdFragment"
             app:destination="@id/ThirdFragment" />
         <action
             android:id="@+id/action_FirstFragment_to_fourthFragment"
@@ -36,12 +36,12 @@
         tools:layout="@layout/fragment_second" />
     <fragment
         android:id="@+id/ThirdFragment"
-        android:name="com.example.lab1.ui.fourth_fragment.FourthFragment"
+        android:name="com.example.lab1.ui.third_fragment.ThirdFragment"
         android:label="Third fragment"
         tools:layout="@layout/fragment_fourth" />
     <fragment
         android:id="@+id/FourthFragment"
-        android:name="com.example.lab1.ui.third_fragment.ThirdFragment"
+        android:name="com.example.lab1.ui.fourth_fragment.FourthFragment"
         android:label="Fourth fragment"
         tools:layout="@layout/fragment_third" />
 </navigation>

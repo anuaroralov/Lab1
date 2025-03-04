@@ -27,18 +27,18 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            findNavController().navigate(R.id.action_FirstFragment_to_firstFragment)
         }
 
         binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_thirdFragment)
+            findNavController().navigate(R.id.action_FirstFragment_to_secondFragment)
         }
 
         binding.buttonThird.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_fourthFragment)
+            findNavController().navigate(R.id.action_FirstFragment_to_thirdFragment)
         }
         binding.buttonFourth.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_fifthFragment)
+            findNavController().navigate(R.id.action_FirstFragment_to_fourthFragment)
         }
     }
 
