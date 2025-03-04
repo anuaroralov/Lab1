@@ -75,13 +75,9 @@ class SecondFragment : Fragment() {
         binding.btnStop.setOnClickListener {
             musicService?.stop()
 
-            // Reset UI elements
-            binding.btnPlayPause.setImageResource(R.drawable.ic_media_play)
+            binding.btnPlayPause.setImageResource(R.drawable.ic_media_pause)
             binding.tvCurrentTrack.text = "Stopped"
 
-            // Optional: Clear the track list if needed
-            val emptyAdapter = ArrayAdapter<String>(requireContext(), R.layout.simple_list_item_1, emptyList())
-            binding.lvTrackList.adapter = emptyAdapter
         }
 
         binding.btnNext.setOnClickListener {

@@ -188,7 +188,7 @@ class MusicPlayerService : Service() {
                 seekTo(0)
             }
         }
-        
+
         val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         notificationManager.cancel(NOTIFICATION_ID)
 
